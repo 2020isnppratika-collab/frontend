@@ -25,8 +25,8 @@ export const About: React.FC = () => {
       </div>
 
       {/* Two Major Traditions */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <div className="bg-white p-5 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-600">
             Northern Coastal Tradition
           </span>
@@ -41,7 +41,7 @@ export const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+        <div className="bg-white p-5 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-600">
             Southern Coastal Tradition
           </span>
@@ -58,7 +58,7 @@ export const About: React.FC = () => {
       </div>
 
       {/* Craftsmanship Section */}
-      <div className="bg-stone-900 text-white rounded-3xl p-8 sm:p-12 border border-amber-800/40 space-y-8">
+      <div className="bg-stone-900 text-white rounded-3xl p-5 sm:p-12 border border-amber-800/40 space-y-8">
         <div className="max-w-2xl space-y-2">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-400">
             Artisanal Excellence
@@ -92,6 +92,39 @@ export const About: React.FC = () => {
               Every costume undergoes strict sanitization, dry cleaning, and ornament inspection during its mandatory buffer day gap between bookings.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Store Location Banner */}
+      <div className="bg-amber-50 rounded-3xl p-8 border border-amber-200 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="space-y-2 text-center md:text-left">
+          <span className="text-xs font-bold uppercase tracking-widest text-amber-800">
+            Visit Our Store & Workshop
+          </span>
+          <h3 className="font-serif text-2xl font-bold text-stone-900">
+            Yakshakesari Yakshagana Costumes
+          </h3>
+          <p className="text-xs text-stone-600 max-w-xl">
+            5th Main Rd, Marathahalli Village, Marathahalli, Bengaluru, Karnataka 560037 &bull; Helpline: +91 80733 77289
+          </p>
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          <a
+            href="https://maps.app.goo.gl/xCEzwpuNuxr6HnR18?g_st=ic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 rounded-xl bg-red-900 hover:bg-red-800 text-amber-100 font-bold text-xs uppercase tracking-wider transition-colors shadow-md flex items-center space-x-1.5"
+          >
+            <MapPin className="w-4 h-4" />
+            <span>Open Google Maps</span>
+          </a>
+          <Link
+            to="/contact"
+            className="px-5 py-3 rounded-xl bg-white border border-stone-300 hover:bg-stone-50 text-stone-800 font-bold text-xs uppercase tracking-wider transition-colors"
+          >
+            Contact Details
+          </Link>
         </div>
       </div>
 
